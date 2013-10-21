@@ -45,5 +45,5 @@ test:
 production:
   adapter: postgresql
   database: conw_production
-  host: localhost
-  username: tbostelmann
+  encoding: unicode
+  password:
