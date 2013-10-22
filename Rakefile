@@ -5,5 +5,3 @@
 require File.expand_path('../config/application', __FILE__)
 
 Conw::Application.load_tasks
-
-Rake::Task["db:schema:dump"].clear if Rails.env.production?
