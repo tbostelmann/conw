@@ -1,0 +1,21 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>name</th>
+    <th>provider</th>
+    <th>uid</th>
+    <th>email</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= link_to 'Show', user.name %></td>
+    <td><%= user.provider %></td>
+    <td><%= user.uid %></td>
+    <td><%= user.email %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

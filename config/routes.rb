@@ -48,11 +48,11 @@ Conw::Application.routes.draw do
   #     resources :products
   #   end
 
-  match '/auth/:provider/callback' => 'authentications#create'
-
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'authentications#index'
+  match 'users' => 'users#index'
+
+  root :to => 'users#index'
 
   # See how all your routes lay out with "rake routes"
 
