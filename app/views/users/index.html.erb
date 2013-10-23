@@ -1,6 +1,7 @@
 <h1>Listing users</h1>
 
 <table>
+  <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
   <tr>
     <th>name</th>
     <th>provider</th>
